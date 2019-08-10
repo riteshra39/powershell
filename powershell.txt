@@ -1,0 +1,51 @@
+get-service *win*
+Get-EventLog
+Stop-Service -Name BITS
+Get-Command -Noun
+Get-Command -Verb get
+Get-Command -
+Get-Help Get-Service -Examples
+Get-Help Get-Help -Online
+Get-Help Get-Service -ShowWindow
+Update-help
+Get-Command -Noun *log* | Out-File c:\log.csv
+Get-Command -Module azur*
+Get-Command -Noun file
+get-help Get-EventLog -
+Get-EventLog -LogName System -Source Microsoft-Windows-UserPnp | Out-File c:\unp.txt
+
+Get-WinEvent -LogName System  | select -first 1 | fl *
+Get-PSProvider
+Get-Command -Noun *childitem*
+Get-Help Get-ChildItem -Online
+Get-Item HKLM:\SOFTWARE
+Get-ChildItem HKLM:\SOFTWARE
+Get-ItemProperty HKLM:\SOFTWARE
+Get-Item C:\Intel
+Get-ChildItem C:\Intel
+Get-ItemProperty C:\Intel
+Get-ChildItem env:\
+Get-Item env:\APPDATA
+Get-Command -Noun item
+get-help New-Item -Online
+
+ New-Item -Path "c:\IAC\iacfile.txt" -Name "IAC" -ItemType 
+  New-Item -Path c:\IAC\ -Name "testfile1.txt" -Type "File"
+   Add-Content -Path c:\IAC\ -Name "testfile1.txt" -ItemType "file" -Value " this is new file dasjfa"
+New-Item -Path c:\IAC\ -Name "testfile2.txt" -ItemType "file" -Value "This is new"
+Get-Command -Noun content
+Get-Help Add-Content -Online
+Add-Content -Path c:\IAC\testfile1.txt -Value 'RItesh' 
+Get-ItemProperty -Path c:\IAC
+Get-Command -Noun *itemproper*
+Get-Help Set-ItemProperty -Online
+ Get-ChildItem c:\IAC\testfile2.txt | Set-ItemProperty -Name LastWriteTime -Value "8/11/2019 1:28:15 PM"
+ Get-ChildItem c:\IAC\testfile2.txt | fl *
+ Get-Service | Get-Member
+ "haresh" | Get-Member
+ $array = "This is my first day"
+ $array1 = @("dinesh","Ramesh","Rupesh")
+ "This is my first day".Split(my)
+ "dinesh".Substring(3,2)
+ Get-Member -InputObject ($array1)
+ $array1[1] = "sailesh"
